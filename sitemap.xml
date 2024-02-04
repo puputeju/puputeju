@@ -216,7 +216,7 @@
   </url>
   
   <url>
-    <loc>https://puputeju.com/categories/%E8%AE%A2%E9%98%85/</loc>
+    <loc>https://puputeju.com/categories/wildcard/</loc>
     <lastmod>2024-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -231,20 +231,6 @@
   
   <url>
     <loc>https://puputeju.com/categories/midjourney/</loc>
-    <lastmod>2024-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://puputeju.com/categories/%E8%AE%A2%E9%98%85/wildcard/</loc>
-    <lastmod>2024-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://puputeju.com/categories/wildcard/</loc>
     <lastmod>2024-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
