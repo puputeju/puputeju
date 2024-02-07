@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://puputeju.com/how-to-subscribe-netflix/</loc>
+    
+    <lastmod>2024-02-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://puputeju.com/how-to-subscribe-youtube-premium/</loc>
     
     <lastmod>2024-02-07</lastmod>
@@ -324,6 +333,13 @@
   
   <url>
     <loc>https://puputeju.com/categories/youtube/</loc>
+    <lastmod>2024-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://puputeju.com/categories/netflix/</loc>
     <lastmod>2024-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
