@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://puputeju.com/how-to-use-fomepay/</loc>
+    
+    <lastmod>2024-02-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://puputeju.com/how-to-subscribe-patreon/</loc>
     
     <lastmod>2024-02-18</lastmod>
@@ -371,6 +380,20 @@
   </url>
   
   <url>
+    <loc>https://puputeju.com/categories/%E8%99%9A%E6%8B%9F%E4%BF%A1%E7%94%A8%E5%8D%A1/</loc>
+    <lastmod>2024-02-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://puputeju.com/categories/chatgpt/wildcard/</loc>
+    <lastmod>2024-02-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://puputeju.com/categories/onlyfans/</loc>
     <lastmod>2024-02-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -385,6 +408,13 @@
   </url>
   
   <url>
+    <loc>https://puputeju.com/categories/patreon/</loc>
+    <lastmod>2024-02-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://puputeju.com/categories/youtube/</loc>
     <lastmod>2024-02-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -392,7 +422,7 @@
   </url>
   
   <url>
-    <loc>https://puputeju.com/categories/chatgpt/wildcard/</loc>
+    <loc>https://puputeju.com/categories/fomepay/</loc>
     <lastmod>2024-02-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -421,20 +451,6 @@
   
   <url>
     <loc>https://puputeju.com/categories/wildcard/</loc>
-    <lastmod>2024-02-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://puputeju.com/categories/%E8%99%9A%E6%8B%9F%E4%BF%A1%E7%94%A8%E5%8D%A1/</loc>
-    <lastmod>2024-02-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://puputeju.com/categories/patreon/</loc>
     <lastmod>2024-02-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
