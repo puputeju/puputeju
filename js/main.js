@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const initAdjust = () => {
     adjustMenu(true)
     $nav.classList.add('show')
+      //添加下面一行代码，使得nav一开始就是nav-fixed类，从而不透明
+      document.getElementById('page-header').classList.add('nav-fixed')
   }
 
   // sidebar menus
@@ -403,7 +405,7 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
         flag = ''
         if (currentTop === 0) {
-          $header.classList.remove('nav-fixed', 'nav-visible')
+          // $header.classList.remove('nav-fixed', 'nav-visible')
         }
         $rightside.classList.remove('rightside-show')
       }
