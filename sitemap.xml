@@ -519,4 +519,11 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://puputeju.com/categories/chatgpt/wildcard/</loc>
+    <lastmod>2024-02-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 </urlset>
