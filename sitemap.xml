@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://puputeju.com/let-chatgpt-talk-like-human/</loc>
+    
+    <lastmod>2024-02-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://puputeju.com/link/index.html</loc>
     
     <lastmod>2024-02-28</lastmod>
@@ -21,15 +30,6 @@
   
   <url>
     <loc>https://puputeju.com/chatgpt-subscribe-failed/</loc>
-    
-    <lastmod>2024-02-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://puputeju.com/let-chatgpt-talk-like-human/</loc>
     
     <lastmod>2024-02-28</lastmod>
     
@@ -450,6 +450,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://puputeju.com/tags/chatgpt/</loc>
+    <lastmod>2024-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 
   
