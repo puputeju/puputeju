@@ -1,0 +1,297 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>什么是CloudFlare SaaS回源？利用SaaS回源加速网站教程 | 扑扑特桔</title><meta name="author" content="扑扑特桔"><meta name="copyright" content="扑扑特桔"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="什么是CloudFlare SaaS回源？利用SaaS回源加速网站教程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="什么是CloudFlare SaaS回源？利用SaaS回源加速网站教程">
+<meta property="og:url" content="https://puputeju.com/accelerate-website-by-cloudflare-saas-fallback-origin/index.html">
+<meta property="og:site_name" content="扑扑特桔">
+<meta property="og:description" content="什么是CloudFlare SaaS回源？利用SaaS回源加速网站教程">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241119185036-image-20241119185036719-2024-11-18-36.png">
+<meta property="article:published_time" content="2024-11-18T12:04:35.000Z">
+<meta property="article:modified_time" content="2024-11-19T11:04:09.639Z">
+<meta property="article:author" content="扑扑特桔">
+<meta property="article:tag" content="ChatGPT,ChatGPT4,Wildcard,虚拟信用卡,AI技术,GPT订阅,onlyfans,hongkongdoll,midjourney">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241119185036-image-20241119185036719-2024-11-18-36.png"><link rel="shortcut icon" href="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/compressed_pptj.png"><link rel="canonical" href="https://puputeju.com/accelerate-website-by-cloudflare-saas-fallback-origin/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.staticfile.org/fancyapps-ui/5.0.32/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e796703590769cda1d8c43ad9a5ebc5a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.staticfile.org/egjs-infinitegrid/4.11.0/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '什么是CloudFlare SaaS回源？利用SaaS回源加速网站教程',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-11-19 19:04:09'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><script> document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("busuanzi_value_site_uv"),t=document.getElementById("busuanzi_value_site_pv"),n=new MutationObserver(e=>{for(let t of e)if("childList"===t.type){n.disconnect(),t.target.innerHTML=parseInt(t.target.innerHTML)+500;break}}),i=new MutationObserver(e=>{for(let t of e)if("childList"===t.type){i.disconnect(),t.target.innerHTML=parseInt(t.target.innerHTML)+3000;break}}),r={childList:!0};n.observe(e,r),i.observe(t,r)}); </script><script> document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("busuanzi_value_page_pv"),t=document.getElementById("busuanzi_value_page_pv"),n=new MutationObserver(e=>{for(let t of e)if("childList"===t.type){n.disconnect(),t.target.innerHTML=parseInt(t.target.innerHTML)+0;break}}),i=new MutationObserver(e=>{for(let t of e)if("childList"===t.type){i.disconnect(),t.target.innerHTML=parseInt(t.target.innerHTML)+300;break}}),r={childList:!0};n.observe(e,r),i.observe(t,r)}); </script><link rel="stylesheet" href="/css/video.css"><meta name="generator" content="Hexo 7.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/compressed_pptj.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">63</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-credit-card"></i><span> WildCard 虚拟信用卡</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/how-to-use-bewildcard/"><span> WildCard使用教程</span></a></li><li><a class="site-page child" href="/common-problem-about-wildcard/"><span> WildCard常见问题</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-comment"></i><span> ChatGPT</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bewildcard-upgrade-chatgpt4/"><span> 一键升级GPT4.0</span></a></li><li><a class="site-page child" href="/one-click-register-chatgpt/"><span> 一键注册GPT账号</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-heartbeat"></i><span> OnlyFans</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/how_to_use_onlyfans/"><span> OnlyFans如何支付订阅</span></a></li><li><a class="site-page child" href="/how-to-search-on-onlyfans/"><span> OnlyFans如何搜索博主</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-sailboat"></i><span> Midjourney</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/how_to_subscribe_midjourney/"><span> Midjourney订阅教程</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-video-camera"></i><span> Sora</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/sora-wiki-2024-2-20/"><span> 5000字长文介绍Sora</span></a></li><li><a class="site-page child" href="/sora-technical-report-mindmap/"><span> Sora技术报告解读</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-color: rgba(0, 0, 0, 0);"><nav id="nav"><span id="blog-info"><a href="/" title="扑扑特桔"><img class="site-icon" src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/compressed_pptj.png"/><span class="site-name">扑扑特桔</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-credit-card"></i><span> WildCard 虚拟信用卡</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/how-to-use-bewildcard/"><span> WildCard使用教程</span></a></li><li><a class="site-page child" href="/common-problem-about-wildcard/"><span> WildCard常见问题</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-comment"></i><span> ChatGPT</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bewildcard-upgrade-chatgpt4/"><span> 一键升级GPT4.0</span></a></li><li><a class="site-page child" href="/one-click-register-chatgpt/"><span> 一键注册GPT账号</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-heartbeat"></i><span> OnlyFans</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/how_to_use_onlyfans/"><span> OnlyFans如何支付订阅</span></a></li><li><a class="site-page child" href="/how-to-search-on-onlyfans/"><span> OnlyFans如何搜索博主</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-sailboat"></i><span> Midjourney</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/how_to_subscribe_midjourney/"><span> Midjourney订阅教程</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-video-camera"></i><span> Sora</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/sora-wiki-2024-2-20/"><span> 5000字长文介绍Sora</span></a></li><li><a class="site-page child" href="/sora-technical-report-mindmap/"><span> Sora技术报告解读</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">什么是CloudFlare SaaS回源？利用SaaS回源加速网站教程</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-11-18T12:04:35.000Z" title="发表于 2024-11-18 20:04:35">2024-11-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-11-19T11:04:09.639Z" title="更新于 2024-11-19 19:04:09">2024-11-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/blog/">blog</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="什么是CloudFlare SaaS回源？利用SaaS回源加速网站教程"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><style>.tutorils-link-color-highlight {
+  color: rgb(73,177,245); /* 定义超链接颜色为蓝色 */
+}
+
+
+</style><p style="color: #008000; font-weight: bold;">【重要】推荐使用<a target="_blank" rel="noopener external nofollow noreferrer" href="https://bewildcard.com/i/1314" style="color: rgb(73,177,245); font-weight: bold;"> Wildcard </a>虚拟信用卡，支持一键升级GPT4.0，支持Onlyfans等服务，现在开卡可以享受官方独家优惠！具体教程请查看：<a href="https://puputeju.com/how-to-use-bewildcard/" style="color: rgb(73,177,245); font-weight: bold;">Wildcard使用教程</a></p><p style="color: #008000; font-weight: bold;">推荐<a href="https://puputeju.com/ChatGPT-mirror/" style="color: rgb(73,177,245); font-weight: bold;"> GPT中转站 </a>，国内直连、价格比官网的一半还便宜，详细教程请查看：<a href="https://puputeju.com/ChatGPT-mirror/" style="color: rgb(73,177,245); font-weight: bold;">GPT中转站使用教程</a></p><span style="font-size: 24px;"><strong>其他精选文章：</strong></span><br><table><thead><tr><th>类别</th><th>精选文章</th></tr></thead><tbody><tr><td> <strong>Sora</strong></td><td>┃<a class="tutorils-link-color-highlight" href="http://puputeju.com/sora-wiki-2024-2-20/" style="font-weight: bold;"> <strong>【推荐】5000字长文介绍Sora </strong></a>┃<a class="tutorils-link-color-highlight" href="http://puputeju.com/sora-technical-report-mindmap/">  <strong>【推荐】Sora原理技术报告（思维导图） </strong></a>┃<a class="tutorils-link-color-highlight" href="http://puputeju.com/sora-with-elevenlabs-audio/">  <strong>【推荐】配音版Sora来袭 </strong></a>┃</td></tr><tr><td> <strong>ChatGPT</strong></td><td>┃<a class="tutorils-link-color-highlight" href="https://puputeju.com/bewildcard-upgrade-chatgpt4/"> <strong> 【推荐】一键升级chatgpt4.0保姆级教程 </strong></a>┃<a class="tutorils-link-color-highlight" href="https://puputeju.com/ChatGPT-mirror/"> <strong> 【推荐】比官网价格的一半还便宜的ChatGPT </strong></a>┃<a href="https://puputeju.com/connect-chatgpt-without-proxy/"> 免科学上网使用官方GPT教程 </a>┃<a href="https://puputeju.com/things-must-know-about-chatgpt/"> 订阅GPT4之前必须了解的十件事情 </a>┃<a href="https://puputeju.com/how_to_register_chatgpt_without_phone/"> 免手机验证码注册ChatGPT教程 </a>┃<a href="https://puputeju.com/one-click-register-chatgpt/"> 一键注册官方GPT账号教程 </a>┃<a href="https://puputeju.com/one-click-register-chatgpt/"> 一键升级官方ChatGPT Team </a>┃</td></tr><tr><td> <strong>Onlyfans</strong></td><td>┃  <a class="tutorils-link-color-highlight" href="https://puputeju.com/how_to_use_onlyfans/"> <strong> 【推荐】OnlyFans订阅保姆级教程 </strong></a>┃<a href="https://puputeju.com/subscribe-onlyfans/"> 常见的Onlyfans订阅方法盘点 </a>┃<a href="https://puputeju.com/onlyfans-age-verification/"> OnlyFans年龄验证如何解决 </a>┃<a href="https://puputeju.com/how-to-search-on-onlyfans/"> Onlyfans如何搜索博主 </a>┃</td></tr><tr><td> <strong>Midjourney</strong></td><td>┃<a class="tutorils-link-color-highlight" href="https://puputeju.com/how_to_subscribe_midjourney/">  <strong>【推荐】Midjourney订阅教程 </strong></a>┃</td></tr><tr><td> <strong>虚拟信用卡</strong></td><td>┃<a class="tutorils-link-color-highlight" href="https://puputeju.com/how-to-use-bewildcard/">  <strong>【推荐】Wildcard使用教程 </strong></a>┃<a href="https://puputeju.com/common-problem-about-wildcard/"> Wildcard常见问题 </a>┃</td></tr><tr><td> <strong>其他</strong></td><td>┃<a class="tutorils-link-color-highlight" href="https://puputeju.com/how-to-subscribe-patreon/"> <strong> 【推荐】Patreon订阅教程 </strong></a>┃<a href="https://puputeju.com/how-to-subscribe-netflix/"> Netflix订阅教程 </a>┃<a href="https://puputeju.com/how-to-subscribe-youtube-premium/"> Youtube Premium订阅教程 </a>┃</td></tr></tbody></table><span style="color:#008000"><span style="color: red; font-weight: bold;">【读者福利、限期免费】</span><strong>有</strong><span style="color: red; font-weight: bold;">任何ChatGPT相关问题</span><strong>（使用技巧、帮注册、帮充值），欢迎添加站长微信</strong><span style="color: red; font-weight: bold;">(AI研究生在读)：nmxgc158，</span><strong>手把手免费指导。</strong></span><br><article class="post-content" id="article-container"><p>早就听说可以利用SaaS回源来对网站进行加速，但是一直没有尝试过，今天有空便试了一下，特地分享出来供大家参考。</p>
+<h2><span id="1-saas回源介绍">1 SaaS回源介绍</span></h2><p>这一节主要是简单介绍一下利用SaaS回源加速网站的原理，<strong>不感兴趣可以直接跳过</strong>。</p>
+<h3><span id="11-什么是saas">1.1 什么是SaaS</span></h3><p>简单的说来，SaaS（Software as Service，软件即服务）就是指：当你想要开展某个业务的时候，不需要自己去编写和部署代码，而是找到现成的软件供应商，通过<strong>互联网</strong>直接使用他们提供的服务。</p>
+<p>比如你使用Gmail发邮件、用百度网盘存储文件、用Netflix看视频等等，这些都是通过互联网访问某种服务，所以他们都属于SaaS。</p>
+<h3><span id="12-什么是saas回源">1.2 什么是SaaS回源</span></h3><p>对于使用SaaS的用户来讲，可能希望通过<strong>自定义的域名</strong>来访问服务。</p>
+<p>比如你的公司购买了Gmail的服务，但为了彰显公司品牌，你们不希望使用@gmail.com的后缀，而是用公司自己的域名@xxx.com，这个时候就需要用到SaaS回源。</p>
+<p>配置好SaaS回源后，访问xxx.com的请求就会被转发到gmail.com进行处理。</p>
+<p>我们在Github Pages搭建个人博客，绑定自定义域名的时候，其实也是类似的道理。</p>
+<h3><span id="13-为什么能利用saas回源对网站加速">1.3 为什么能利用SaaS回源对网站加速</span></h3><p>对于静态资源（如图片、CSS、JS 等），Cloudflare 在全球的分布式节点可以缓存这些内容。当用户请求这些资源时，访问路径是：<strong>浏览器 → Cloudflare 节点（国内&#x2F;最近） → 直接返回缓存内容</strong></p>
+<p>而原来的访问路径是：<strong>浏览器 → 国外源站</strong></p>
+<p>显然，配置了SaaS回源后，不需要请求原站，所以访问速度会快不少。</p>
+<h2><span id="2-概述">2 概述</span></h2><p><strong>需要用到的：</strong></p>
+<ul>
+<li><strong>【必须】</strong> 你希望加速的域名<code>a.com</code>（不用托管到Cloudflare）</li>
+<li><strong>【必须】</strong> 回源域名<code>b.com</code>（必须托管到Cloudflare）</li>
+<li><strong>【必须】</strong> 国外信用卡，用于绑定Cloudflare，推荐使用<a target="_blank" rel="noopener external nofollow noreferrer" href="https://bewildcard.site/">wildcard</a></li>
+<li><strong>【非必须】</strong> DNSPod，用于将<strong>海外线路</strong>和<strong>国内线路</strong>分开解析</li>
+</ul>
+<p><strong>步骤概述：</strong></p>
+<ul>
+<li>将<code>b.com</code>托管到Cloudflare，并解析到你的服务器（比如Github Pages）</li>
+<li>配置Cloudflare SaaS回源（此功能免费，但需要绑定信用卡），将<code>b.com</code>作为回退源</li>
+<li>DNSPod上，配置<code>a.com</code>的DNS，将其指向Cloudflare</li>
+</ul>
+<h2><span id="3-详细步骤">3 详细步骤</span></h2><h3><span id="31-注册cloudflare并托管bcom">3.1 注册CloudFlare，并托管b.com</span></h3><p>注册登录CloudFlare，把<code>b.com</code>添加进去，并查看Cloudflare分配的NS服务器。</p>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241118121329-image-20241118121329105-2024-11-12-29.png" alt="image-20241118121329105"></p>
+<p>在你的域名注册商那里，把DNS服务器设置为上面那两个ns域名</p>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241118121431-image-20241118121431160-2024-11-12-31.png" alt="image-20241118121431160"></p>
+<p>设置完域名托管后，需要等待一段时间才能生效。如果这一步等了很久还是没有生效，可以在域名注册商那里删除cloudflare的记录再重新填写。</p>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241118121520-image-20241118121520009-2024-11-12-20.png" alt="image-20241118121520009"></p>
+<p>当域名状态变为活动时，表示托管成功</p>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241118123138-image-20241118123138817-2024-11-12-38.png" alt="image-20241118123138817"></p>
+<h3><span id="32-启用cloudflare-for-saas">3.2 启用CloudFlare for SaaS</span></h3><p>进入SSL→自定义主机名</p>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241119164607-4e0430d39bff681e4c9b2aff48edc5f8-2024-11-16-07.png"></p>
+<p>点击启用CloudFlare SaaS。</p>
+<p>这里需要绑定外国信用卡。没有外国卡的可以使用虚拟卡，推荐<a target="_blank" rel="noopener external nofollow noreferrer" href="https://bewildcard.site/">Wildcard</a>，2年期开卡费10美元。</p>
+<p>在<a target="_blank" rel="noopener external nofollow noreferrer" href="https://bewildcard.site/">Wildcard</a>开卡后，把信息填写进去就行。</p>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241117144610-image-20241117144610063-2024-11-14-10.png" alt="image-20241117144610063"></p>
+<h3><span id="33-解析回源域名">3.3 解析回源域名</span></h3><p>进入到<code>b.com</code>的管理界面-&gt; DNS -&gt; 记录</p>
+<p>把<code>b.com</code>A记录或AAAA记录到你的真实网站服务器IP，我这里是解析到Github Pages服务器上的。</p>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241118123417-image-20241118123417832-2024-11-12-17.png" alt="image-20241118123417832"></p>
+<h3><span id="34-添加回源">3.4 添加回源</span></h3><p>进入到<code>b.com</code>的管理界面-&gt; SSL&#x2F;TLS -&gt; 自定义主机名</p>
+<p>添加回退源，回退源地址为刚刚解析的<code>b.com</code></p>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241118123836-image-20241118123836262-2024-11-12-36.png" alt="image-20241118123836262"></p>
+<h3><span id="35-添加自定义主机名">3.5 添加自定义主机名</span></h3><p>添加回源成功后，在同样的界面看到有效了。</p>
+<p>接下来添加自定义主机名。</p>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241119165001-639aad3cb1ff09f7c02df7143b44698a-2024-11-16-01.png"></p>
+<p>主机名为你的希望加速的网站域名<code>a.com</code></p>
+<p>其余的按照图片上的填写</p>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241119164956-345d43446e3572e75f06fae9fee6c24e-2024-11-16-56.png"></p>
+<p>接下来到DNSPod，为a.com添加下面的两条记录（前提是已经将a.com托管到了DNSPod），用来验证域名所有权</p>
+<p>成功后稍等片刻，再去CloudFlare -&gt; SSL&#x2F;TLS -&gt; 自定义主机名 刷新检查，等到证书状态和主机名状态都为有效则成功。</p>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241118134012-image-20241118134012695-2024-11-13-12.png" alt="image-20241118134012695"></p>
+<h3><span id="36-acom解析指向">3.6 <code>a.com</code>解析指向</span></h3><p>到这里我们在DNSPod设置<code>a.com</code>的域名解析处</p>
+<p>将境内线路解析到<code>shopify.com</code>。</p>
+<p>境外线路解析到<code>1.0.0.5</code>（Cloudflare服务器在境外的IP）</p>
+<blockquote>
+<p>之所以要解析到<code>shopify.com</code>，是因为<code>shopify.com</code>也使用了Cloudflare的服务，所以它的域名是指向国内最快速的Cloudflare的节点的。</p>
+<p>除了<code>shopify.com</code>，也可以解析到其他使用了Cloudflare服务的域名，比如<code>csgo.com</code>、<code>visa.com</code>等等。</p>
+</blockquote>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241118133609-image-20241118133609278-2024-11-13-09.png" alt="image-20241118133609278"></p>
+<p>最终a.com的dns记录如下：</p>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241118134058-image-20241118134058046-2024-11-13-58.png" alt="image-20241118134058046"></p>
+<h3><span id="37-设置ssl">3.7 设置SSL</span></h3><p>在CloudFlare进入到<code>b.com</code>的管理界面-&gt; SSL&#x2F;TLS -&gt; 概述 中将SSL&#x2F;TLS加密模式改为<code>完全</code>。</p>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241119165421-image-20241119165421221-2024-11-16-21.png" alt="image-20241119165421221"></p>
+<p>到此，就完成SaaS回源的配置了。</p>
+<p>当我们访问<code>a.com</code>的时候，请求首先转发给Cloudflare的境内节点。</p>
+<p>然后境内节点会发现<code>a.com</code>是<code>b.com</code>的自定义主机名，就会直接将缓存的<code>b.com</code>的内容返回给浏览器。从而达到加速网站的目的。</p>
+<h2><span id="访问和验证">访问和验证</span></h2><p>使用itdog测速，可以看到速度明显快了不少。</p>
+<p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241119165912-image-20241119165911939-2024-11-16-12.png" alt="image-20241119165911939"></p>
+<p>参考文章：</p>
+</article><!-- 下面是几种不同样式的分割线--><!-- hr(style='border: none; height: 3px; background: linear-gradient(to right, #f0f0f0, #ccc, #f0f0f0); margin: 20px 0;')--><!-- hr(style='border: none; height: 5px; background-color: #0088cc; width: 80%; margin: 20px auto; border-radius: 5px;')--><hr style="border: none; border-top: 2px dashed #ccc; margin: 20px 0;"><!-- hr(style='border: none; height: 3px; background-color: #0088cc; width: 50%; margin: 20px auto;')--><span style="font-size: 24px;"><strong>你好，我是扑扑特桔！</strong></span><p>亲爱的读者你好，我是<strong>扑扑特桔</strong>，一个专注于AI的研究生。
+最新原创的文章都先发布在公众号，欢迎关注哦~，</p><p> <strong>扫描下方二维码</strong>，带你第一时间了解ChatGPT、Sora、Midjourney最新动态！</p><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/image-20240302103503864.png" alt="扑扑特桔公众号.jpg" style="width: 80%; display: block;margin: 0 auto;"><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://puputeju.com">扑扑特桔</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://puputeju.com/accelerate-website-by-cloudflare-saas-fallback-origin/">https://puputeju.com/accelerate-website-by-cloudflare-saas-fallback-origin/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://puputeju.com" target="_blank">扑扑特桔</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241119185036-image-20241119185036719-2024-11-18-36.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.staticfile.org/butterfly-extsrc/1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.staticfile.org/butterfly-extsrc/1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/chatgpt-canvas/" title="ChatGPT Canvas：全新协作方式，提升写作与编程体验"><img class="cover" src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/641" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">ChatGPT Canvas：全新协作方式，提升写作与编程体验</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/compressed_pptj.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">扑扑特桔</div><div class="author-info__description">一个热爱ai的研究生</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">63</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><a style="color: rgb(73,177,245); font-weight: bold;" href="https://puputeju.com/ChatGPT-mirror/" >比官网的一半还便宜的GPT4！</a>
+<br>
+<a style="color: rgb(73,177,245); font-weight: bold;" href="https://puputeju.com/bewildcard-upgrade-chatgpt4/" >GPT注册与4.0升级！</a>
+<br>
+<a style="color: rgb(73,177,245); font-weight: bold;" href="https://puputeju.com/how_to_use_onlyfans/">OnlyFans订阅教程！</a>
+<br>
+<a style="color: rgb(73,177,245); font-weight: bold;" href="https://puputeju.com/how_to_subscribe_midjourney/">Midjourney订阅指南！</a>
+</div></div><div class="card-widget my_qrcode" id="my_qrcode"><div class="item-headline"><i class="fa fa-bookmark"></i><span>【读者福利】站长私人微信</span></div><div class="item-content"><p>有<strong style="color:red;">任何</strong>ChatGPT相关问题，欢迎添加站长微信(AI研究生在读)：<strong style="color:red;">nmxgc158</strong>，可以手把手免费指导~
+</p> 
+<img style='width: 100%; display: block; margin: 0 auto;' src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/image-20240302103030731.png" alt="站长私人微信.jpg" >
+</div></div><div class="card-widget wxmp_qrcode" id="wxmp_qrcode"><div class="item-headline"><i class="fa fa-bookmark"></i><span>微信公众号</span></div><div class="item-content"><p>
+亲爱的读者你好，我是<strong style="color:red;">扑扑特桔</strong>，一个专注于AI的研究生。
+</p> 
+<p><strong style="color:red;">扫码关注</strong>，带你随时了解最新AI动态！
+</p> 
+<img style='width: 100%; display: block; margin: 0 auto;' src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/image-20240302103247252.png" alt="扑扑特桔公众号.jpg" >
+</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text">1 SaaS回源介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text">1.1 什么是SaaS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text">1.2 什么是SaaS回源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text">1.3 为什么能利用SaaS回源对网站加速</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text">2 概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text">3 详细步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text">3.1 注册CloudFlare，并托管b.com</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text">3.2 启用CloudFlare for SaaS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text">3.3 解析回源域名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text">3.4 添加回源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text">3.5 添加自定义主机名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text">3.6 a.com解析指向</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text">3.7 设置SSL</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text">访问和验证</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/accelerate-website-by-cloudflare-saas-fallback-origin/" title="什么是CloudFlare SaaS回源？利用SaaS回源加速网站教程"><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/20241119185036-image-20241119185036719-2024-11-18-36.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="什么是CloudFlare SaaS回源？利用SaaS回源加速网站教程"/></a><div class="content"><a class="title" href="/accelerate-website-by-cloudflare-saas-fallback-origin/" title="什么是CloudFlare SaaS回源？利用SaaS回源加速网站教程">什么是CloudFlare SaaS回源？利用SaaS回源加速网站教程</a><time datetime="2024-11-18T12:04:35.000Z" title="发表于 2024-11-18 20:04:35">2024-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/chatgpt-canvas/" title="ChatGPT Canvas：全新协作方式，提升写作与编程体验"><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/641" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ChatGPT Canvas：全新协作方式，提升写作与编程体验"/></a><div class="content"><a class="title" href="/chatgpt-canvas/" title="ChatGPT Canvas：全新协作方式，提升写作与编程体验">ChatGPT Canvas：全新协作方式，提升写作与编程体验</a><time datetime="2024-10-04T01:04:35.000Z" title="发表于 2024-10-04 09:04:35">2024-10-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/how_to_upgrade_claude/" title="如何升级订阅Claude 3.5？信用卡付款失败怎么办？使用虚拟信用卡升级Claude 3.5 指南"><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/zikMHZnqUEaydbe.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何升级订阅Claude 3.5？信用卡付款失败怎么办？使用虚拟信用卡升级Claude 3.5 指南"/></a><div class="content"><a class="title" href="/how_to_upgrade_claude/" title="如何升级订阅Claude 3.5？信用卡付款失败怎么办？使用虚拟信用卡升级Claude 3.5 指南">如何升级订阅Claude 3.5？信用卡付款失败怎么办？使用虚拟信用卡升级Claude 3.5 指南</a><time datetime="2024-09-14T07:24:17.000Z" title="发表于 2024-09-14 15:24:17">2024-09-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/fomepay-cheat/" title="Fomepay跑路了！Fomepay无法提现，无法充值解决办法"><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/image-20240825211437888.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Fomepay跑路了！Fomepay无法提现，无法充值解决办法"/></a><div class="content"><a class="title" href="/fomepay-cheat/" title="Fomepay跑路了！Fomepay无法提现，无法充值解决办法">Fomepay跑路了！Fomepay无法提现，无法充值解决办法</a><time datetime="2024-08-18T05:04:35.000Z" title="发表于 2024-08-18 13:04:35">2024-08-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/chatgpt4o-mini-published/" title="【绝对真实】可以免费使用的官方GPT4来了"><img src="https://puputeju-tc.oss-cn-beijing.aliyuncs.com/image-20240719075945463.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【绝对真实】可以免费使用的官方GPT4来了"/></a><div class="content"><a class="title" href="/chatgpt4o-mini-published/" title="【绝对真实】可以免费使用的官方GPT4来了">【绝对真实】可以免费使用的官方GPT4来了</a><time datetime="2024-07-18T22:44:42.000Z" title="发表于 2024-07-19 06:44:42">2024-07-19</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By 扑扑特桔</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.staticfile.org/fancyapps-ui/5.0.32/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://comments.puputeju.com/',
+      region: 'ap-southeast-1',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(init,0)
+    else getScript('https://cdn.staticfile.org/twikoo/1.6.29/twikoo.all.min.js').then(init)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://comments.puputeju.com/',
+      region: 'ap-southeast-1',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+      
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><script defer="defer" id="ribbon" src="https://cdn.staticfile.org/butterfly-extsrc/1.1.3/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.staticfile.org/butterfly-extsrc/1.1.3/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
