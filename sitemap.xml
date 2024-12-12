@@ -74,15 +74,6 @@
   </url>
   
   <url>
-    <loc>https://puputeju.com/chatgpt-subscribe-failed/</loc>
-    
-    <lastmod>2024-12-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://puputeju.com/chatgpt-detected-suspicious-login-behavior/</loc>
     
     <lastmod>2024-12-10</lastmod>
@@ -92,16 +83,7 @@
   </url>
   
   <url>
-    <loc>https://puputeju.com/how-to-subscribe-sora/</loc>
-    
-    <lastmod>2024-12-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://puputeju.com/how_to_subscribe_midjourney/</loc>
+    <loc>https://puputeju.com/chatgpt-subscribe-failed/</loc>
     
     <lastmod>2024-12-10</lastmod>
     
@@ -119,7 +101,16 @@
   </url>
   
   <url>
-    <loc>https://puputeju.com/how-to-use-bewildcard-remote-environment/</loc>
+    <loc>https://puputeju.com/how_to_subscribe_midjourney/</loc>
+    
+    <lastmod>2024-12-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://puputeju.com/how-to-subscribe-sora/</loc>
     
     <lastmod>2024-12-10</lastmod>
     
@@ -146,6 +137,24 @@
   </url>
   
   <url>
+    <loc>https://puputeju.com/how-to-use-bewildcard-remote-environment/</loc>
+    
+    <lastmod>2024-12-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://puputeju.com/how-to-use-gpt4o/</loc>
+    
+    <lastmod>2024-12-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://puputeju.com/how_to_register_chatgpt_without_phone/</loc>
     
     <lastmod>2024-12-10</lastmod>
@@ -156,15 +165,6 @@
   
   <url>
     <loc>https://puputeju.com/how_to_upgrade_chatgpt4/</loc>
-    
-    <lastmod>2024-12-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://puputeju.com/how-to-use-gpt4o/</loc>
     
     <lastmod>2024-12-10</lastmod>
     
@@ -191,15 +191,6 @@
   </url>
   
   <url>
-    <loc>https://puputeju.com/how-to-subscribe-youtube-premium/</loc>
-    
-    <lastmod>2024-12-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://puputeju.com/how-to-subscribe-netflix/</loc>
     
     <lastmod>2024-12-10</lastmod>
@@ -218,6 +209,15 @@
   </url>
   
   <url>
+    <loc>https://puputeju.com/how-to-subscribe-youtube-premium/</loc>
+    
+    <lastmod>2024-12-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://puputeju.com/how-to-use-chatgpt-api/</loc>
     
     <lastmod>2024-12-10</lastmod>
@@ -227,7 +227,7 @@
   </url>
   
   <url>
-    <loc>https://puputeju.com/one-click-register-chatgpt/</loc>
+    <loc>https://puputeju.com/how-to-use-gpt4o/</loc>
     
     <lastmod>2024-12-10</lastmod>
     
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://puputeju.com/how-to-use-gpt4o/</loc>
+    <loc>https://puputeju.com/one-click-register-chatgpt/</loc>
     
     <lastmod>2024-12-10</lastmod>
     
@@ -272,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://puputeju.com/how-to-register-claude3/</loc>
+    <loc>https://puputeju.com/how-to-register-chatgpt4/</loc>
     
     <lastmod>2024-12-10</lastmod>
     
@@ -281,7 +281,7 @@
   </url>
   
   <url>
-    <loc>https://puputeju.com/how-to-register-chatgpt4/</loc>
+    <loc>https://puputeju.com/how-to-register-claude3/</loc>
     
     <lastmod>2024-12-10</lastmod>
     
@@ -617,7 +617,7 @@
   </url>
   
   <url>
-    <loc>https://puputeju.com/categories/youtube/</loc>
+    <loc>https://puputeju.com/categories/netflix/</loc>
     <lastmod>2024-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -631,13 +631,6 @@
   </url>
   
   <url>
-    <loc>https://puputeju.com/categories/netflix/</loc>
-    <lastmod>2024-12-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://puputeju.com/categories/patreon/</loc>
     <lastmod>2024-12-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -645,14 +638,14 @@
   </url>
   
   <url>
-    <loc>https://puputeju.com/categories/blog/</loc>
+    <loc>https://puputeju.com/categories/youtube/</loc>
     <lastmod>2024-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://puputeju.com/categories/cursor/</loc>
+    <loc>https://puputeju.com/categories/blog/</loc>
     <lastmod>2024-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -673,7 +666,21 @@
   </url>
   
   <url>
+    <loc>https://puputeju.com/categories/cursor/</loc>
+    <lastmod>2024-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://puputeju.com/categories/chatgpt/wildcard/</loc>
+    <lastmod>2024-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://puputeju.com/categories/midjourney/</loc>
     <lastmod>2024-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -688,13 +695,6 @@
   
   <url>
     <loc>https://puputeju.com/categories/sora/</loc>
-    <lastmod>2024-12-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://puputeju.com/categories/midjourney/</loc>
     <lastmod>2024-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
